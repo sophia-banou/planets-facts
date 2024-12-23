@@ -1,0 +1,160 @@
+:root {
+    /* COLORS */
+    --white: hsl(0, 0%, 100%);
+    --dark-blue: hsl(240, 67%, 8%);
+    --dark-grey: hsl(240, 17%, 8%);
+    --grey: hsl(240, 6%, 54%);
+    --teal-blue: hsl(194, 48%, 49%);
+    --yellow: hsl(33, 82%, 61%);
+    --purple: hsl(263, 67%, 51%);
+    --orange-red: hsl(10, 63%, 51%);
+    --red: hsl(2, 68%, 53%);
+    --orange: hsl(17, 73%, 46%);
+    --green: hsl(169, 73%, 44%);
+    --blue: hsl(222, 87%, 56%);
+    --button-hover: hsl(240, 19%, 24%);
+    --white-border: hsla(0, 0%, 100%, 20%);
+    /* SPACINGS */
+    --sp-300: 300px;
+    --sp-126: 126px;
+    --sp-93: 93px;
+    --sp-87: 87px;
+    --sp-60: 60px;
+    --sp-44: 44px;
+    --sp-41: 41px;
+    --sp-38: 38px;
+    --sp-33: 33px;
+    --sp-32: 32px;
+    --sp-28: 28px;
+    --sp-24: 24px;
+    --sp-23: 23px;
+    --sp-22: 22px;
+    --sp-20: 20px;
+    --sp-16: 16px;
+    --sp-11: 11px;
+    --sp-8: 8px;
+    --sp-7: 7px;
+    --sp-6: 6px;
+}
+
+/* FONTS */
+/* Antonio */
+@font-face {
+    font-family: 'antonio';
+    font-style: normal;
+    src: url(../fonts/antonio/Antonio-Regular.ttf) format("truetype");
+}
+
+/* Spartan */
+@font-face {
+    font-family: 'spartan';
+    font-style: normal;
+    src: url(../fonts/spartan/Spartan-Regular.ttf) format("truetype");
+}
+
+/* TEXT PRESETS */
+h1 {
+    font-family: 'antonio';
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 10.3rem;
+    letter-spacing: 0rem;
+}
+
+h2 {
+    font-family: 'antonio';
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    letter-spacing: -0.15rem;
+}
+
+h3 {
+    font-family: 'spartan';
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.26rem;
+}
+
+h4 {
+    font-family: 'spartan';
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    font-family: 'spartan';
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    letter-spacing: 0rem;
+}
+
+/* BASICS */
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: none !important;
+}
+
+* {
+    transition: 0.2s linear;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialised;
+    scroll-behavior: smooth;
+}
+
+/* CLASSES */
+/* background */
+body {
+    background-color: var(--dark-blue);
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

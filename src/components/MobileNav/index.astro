@@ -1,0 +1,103 @@
+---
+import styles from "./MobileNav.module.css";
+const path = Astro.url.pathname;
+const basePath = import.meta.env.BASE_URL || "/";
+const { planet } = Astro.props;
+
+const color = planet.color;
+---
+
+<div class={styles.MobileNav} id="mobile-menu">
+  <nav class={styles.Navigation}>
+    <a
+      href=`${basePath}planets/mercury`
+      class={`${styles.Item} ${path.endsWith("/mercury") ? `act` : ""}`}
+      data-astro-prefetch
+    >
+      <div class={styles.ItemLeft}>
+        <div class={styles.Ball} style="background-color: var(--teal-blue)">
+        </div>
+        <h4>MERCURY</h4>
+      </div>
+      <img src="/images/icon-chevron.svg" alt="arrow" />
+    </a>
+    <a
+      href=`${basePath}planets/venus`
+      class={`${styles.Item} ${path.endsWith("/venus") ? `act` : ""}`}
+      data-astro-prefetch
+    >
+      <div class={styles.ItemLeft}>
+        <div class={styles.Ball} style="background-color: var(--yellow)"></div>
+        <h4>VENUS</h4>
+      </div>
+      <img src="/images/icon-chevron.svg" alt="arrow" />
+    </a>
+    <a
+      href=`${basePath}planets/earth`
+      class={`${styles.Item} ${path.endsWith("/earth") ? `act` : ""}`}
+      data-astro-prefetch
+    >
+      <div class={styles.ItemLeft}>
+        <div class={styles.Ball} style="background-color: var(--purple)"></div>
+        <h4>EARTH</h4>
+      </div>
+      <img src="/images/icon-chevron.svg" alt="arrow" />
+    </a>
+    <a
+      href=`${basePath}planets/mars`
+      class={`${styles.Item} ${path.endsWith("/mars") ? `act` : ""}`}
+      data-astro-prefetch
+    >
+      <div class={styles.ItemLeft}>
+        <div class={styles.Ball} style="background-color: var(--orange-red)">
+        </div>
+        <h4>MARS</h4>
+      </div>
+      <img src="/images/icon-chevron.svg" alt="arrow" />
+    </a>
+    <a
+      href=`${basePath}planets/jupiter`
+      class={`${styles.Item} ${path.endsWith("/jupiter") ? `act` : ""}`}
+      data-astro-prefetch
+    >
+      <div class={styles.ItemLeft}>
+        <div class={styles.Ball} style="background-color: var(--red)"></div>
+        <h4>JUPITER</h4>
+      </div>
+      <img src="/images/icon-chevron.svg" alt="arrow" />
+    </a>
+    <a
+      href=`${basePath}planets/saturn`
+      class={`${styles.Item} ${path.endsWith("/saturn") ? `act` : ""}`}
+      data-astro-prefetch
+    >
+      <div class={styles.ItemLeft}>
+        <div class={styles.Ball} style="background-color: var(--orange)"></div>
+        <h4>SATURN</h4>
+      </div>
+      <img src="/images/icon-chevron.svg" alt="arrow" />
+    </a>
+    <a
+      href=`${basePath}planets/uranus`
+      class={`${styles.Item} ${path.endsWith("/uranus") ? `act` : ""}`}
+      data-astro-prefetch
+    >
+      <div class={styles.ItemLeft}>
+        <div class={styles.Ball} style="background-color: var(--green)"></div>
+        <h4>URANUS</h4>
+      </div>
+      <img src="/images/icon-chevron.svg" alt="arrow" />
+    </a>
+    <a
+      href=`${basePath}planets/neptune`
+      class={`${styles.Item} ${path.endsWith("/neptune") ? `act` : ""}`}
+      data-astro-prefetch
+    >
+      <div class={styles.ItemLeft}>
+        <div class={styles.Ball} style="background-color: var(--blue)"></div>
+        <h4>NEPTUNE</h4>
+      </div>
+      <img src="/images/icon-chevron.svg" alt="arrow" />
+    </a>
+  </nav>
+</div>

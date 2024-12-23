@@ -1,0 +1,43 @@
+---
+import Header from "../components/Header/index.astro";
+import MobileNav from "../components/MobileNav/index.astro";
+const { id } = Astro.props;
+import data from "../data/data.json";
+const planet = data.find((p) => p.id === id);
+import Planet from "../components/Planet";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../styles/global.css" />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>Frontend Mentor | Planets fact site</title>
+  </head>
+
+  <body>
+    <Header planet={planet} />
+    <MobileNav planet={planet} />
+    <Planet planet={planet} client:load />
+    <picture class="background">
+      <img src="../images/background-stars.svg" alt="stars" />
+    </picture>
+    <script>
+      import "../scripts/script.js";
+    </script>
+  </body>
+</html>

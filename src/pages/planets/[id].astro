@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const { id } = Astro.params;
+
+export async function getStaticPaths() {
+  return [
+    { params: { id: "mercury" } },
+    { params: { id: "venus" } },
+    { params: { id: "earth" } },
+    { params: { id: "mars" } },
+    { params: { id: "jupiter" } },
+    { params: { id: "saturn" } },
+    { params: { id: "uranus" } },
+    { params: { id: "neptune" } },
+  ];
+}
+---
+
+<BaseLayout id={id} />
