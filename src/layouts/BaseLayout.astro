@@ -5,6 +5,7 @@ const { id } = Astro.props;
 import data from "../data/data.json";
 const planet = data.find((p) => p.id === id);
 import Planet from "../components/Planet";
+const basePath = import.meta.env.BASE_URL || "/";
 ---
 
 <!doctype html>
@@ -19,11 +20,12 @@ import Planet from "../components/Planet";
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../images/favicon-32x32.png"
+      href=`${basePath}images/favicon-32x32.png`
+      `
     />
 
     <!-- styles -->
-    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="/planets-facts/styles/global.css" />
 
     <meta name="generator" content={Astro.generator} />
     <title>Frontend Mentor | Planets fact site</title>
@@ -34,7 +36,7 @@ import Planet from "../components/Planet";
     <MobileNav planet={planet} />
     <Planet planet={planet} client:load />
     <picture class="background">
-      <img src="../images/background-stars.svg" alt="stars" />
+      <img src=`${basePath}images/background-stars.svg` ` alt="stars" />
     </picture>
     <script>
       import "../scripts/script.js";
