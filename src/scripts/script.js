@@ -41,13 +41,13 @@ $(document).ready(function () {
   $hamburger.on("click", function () {
     if ($(this).hasClass("hamb-active")) {
       $(this).removeClass("hamb-active");
-      $(this).attr("src", "../images/icon-hamburger.svg");
+      $(this).attr("src", "/planets-facts/images/icon-hamburger.svg");
       $mobileMenu.css("bottom", `calc(100vh + ${headerHeight}px)`);
       $mobileMenu.hide();
       $("body").css("position", "static");
     } else {
       $(this).addClass("hamb-active");
-      $(this).attr("src", "../images/icon-hamburger-active.svg");
+      $(this).attr("src", "/planets-facts/images/icon-hamburger-active.svg");
       $("body").css("position", "fixed");
       $mobileMenu.show();
       $mobileMenu.css("bottom", 0);
@@ -57,7 +57,7 @@ $(document).ready(function () {
   $(window).on("resize", function () {
     if ($hamburger.hasClass("hamb-active")) {
       $hamburger.removeClass("hamb-active");
-      $hamburger.attr("src", "../images/icon-hamburger.svg");
+      $hamburger.attr("src", "/planets-facts/images/icon-hamburger.svg");
       $mobileMenu.css("bottom", `calc(100vh + ${headerHeight}px)`);
       $mobileMenu.hide();
       $("body").css("position", "static");
@@ -67,7 +67,7 @@ $(document).ready(function () {
   $("a").on("click", function () {
     if ($hamburger.hasClass("hamb-active")) {
       $hamburger.removeClass("hamb-active");
-      $hamburger.attr("src", "../images/icon-hamburger.svg");
+      $hamburger.attr("src", "/planets-facts/images/icon-hamburger.svg");
       $mobileMenu.css("bottom", `calc(100vh + ${headerHeight}px)`);
       $mobileMenu.hide();
       $("body").css("position", "static");
