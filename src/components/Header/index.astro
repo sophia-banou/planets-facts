@@ -11,14 +11,14 @@ const color = planet.color;
   <div class={styles.headerLeft}>
     <a
       href=`${basePath}planets/mercury`
-      class={`${path.endsWith("/mercury") ? `${styles.LogoActive} act` : ""}`}
+      class={`${path.endsWith("/mercury/") ? `${styles.LogoActive} act` : ""}`}
       data-astro-prefetch
     >
       <h2 class={styles.Logo}>THE PLANETS</h2>
     </a>
     <img
       class={styles.Hamburger}
-      src="../images/icon-hamburger.svg"
+      src="/planets-facts/images/icon-hamburger.svg"
       alt="mobile menu"
       id="hamburger"
     />
@@ -26,7 +26,7 @@ const color = planet.color;
   <nav class={styles.Navigation}>
     <a
       href=`${basePath}planets/mercury`
-      class={`${styles.Item} ${path.endsWith("/mercury") ? `${styles.Active} act` : ""}`}
+      class={`${styles.Item} ${path.endsWith("/mercury/") ? `${styles.Active} act` : ""}`}
       data-astro-prefetch
       style={path.endsWith("/mercury") ? `border-color: ${color}` : ""}
     >
@@ -34,7 +34,7 @@ const color = planet.color;
     </a>
     <a
       href=`${basePath}planets/venus`
-      class={`${styles.Item} ${path.endsWith("/venus") ? `${styles.Active} act` : ""}`}
+      class={`${styles.Item} ${path.endsWith("/venus/") ? `${styles.Active} act` : ""}`}
       data-astro-prefetch
       style={path.endsWith("/venus") ? `border-color: ${color}` : ""}
     >
@@ -42,7 +42,7 @@ const color = planet.color;
     </a>
     <a
       href=`${basePath}planets/earth`
-      class={`${styles.Item} ${path.endsWith("/earth") ? `${styles.Active} act` : ""}`}
+      class={`${styles.Item} ${path.endsWith("/earth/") ? `${styles.Active} act` : ""}`}
       data-astro-prefetch
       style={path.endsWith("/earth") ? `border-color: ${color}` : ""}
     >
@@ -50,7 +50,7 @@ const color = planet.color;
     </a>
     <a
       href=`${basePath}planets/mars`
-      class={`${styles.Item} ${path.endsWith("/mars") ? `${styles.Active} act` : ""}`}
+      class={`${styles.Item} ${path.endsWith("/mars/") ? `${styles.Active} act` : ""}`}
       data-astro-prefetch
       style={path.endsWith("/mars") ? `border-color: ${color}` : ""}
     >
@@ -58,7 +58,7 @@ const color = planet.color;
     </a>
     <a
       href=`${basePath}planets/jupiter`
-      class={`${styles.Item} ${path.endsWith("/jupiter") ? `${styles.Active} act` : ""}`}
+      class={`${styles.Item} ${path.endsWith("/jupiter/") ? `${styles.Active} act` : ""}`}
       data-astro-prefetch
       style={path.endsWith("/jupiter") ? `border-color: ${color}` : ""}
     >
@@ -66,7 +66,7 @@ const color = planet.color;
     </a>
     <a
       href=`${basePath}planets/saturn`
-      class={`${styles.Item} ${path.endsWith("/saturn") ? `${styles.Active} act` : ""}`}
+      class={`${styles.Item} ${path.endsWith("/saturn/") ? `${styles.Active} act` : ""}`}
       data-astro-prefetch
       style={path.endsWith("/saturn") ? `border-color: ${color}` : ""}
     >
@@ -74,7 +74,7 @@ const color = planet.color;
     </a>
     <a
       href=`${basePath}planets/uranus`
-      class={`${styles.Item} ${path.endsWith("/uranus") ? `${styles.Active} act` : ""}`}
+      class={`${styles.Item} ${path.endsWith("/uranus/") ? `${styles.Active} act` : ""}`}
       data-astro-prefetch
       style={path.endsWith("/uranus") ? `border-color: ${color}` : ""}
     >
@@ -82,7 +82,7 @@ const color = planet.color;
     </a>
     <a
       href=`${basePath}planets/neptune`
-      class={`${styles.Item} ${path.endsWith("/neptune") ? `${styles.Active} act` : ""}`}
+      class={`${styles.Item} ${path.endsWith("/neptune/") ? `${styles.Active} act` : ""}`}
       data-astro-prefetch
       style={path.endsWith("/neptune") ? `border-color: ${color}` : ""}
     >

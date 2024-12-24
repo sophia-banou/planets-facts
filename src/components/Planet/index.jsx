@@ -60,7 +60,7 @@ const Planet = ({ planet }) => {
                                         <a href={`${sources[activeTab]}`}>Wikipedia</a>
                                     </p>
                                     <a href={`${sources[activeTab]}`}>
-                                        <img src="../images/icon-source.svg" alt="source" />
+                                        <img src="/planets-facts/images/icon-source.svg" alt="source" />
                                     </a>
                                 </div>
                             </div>
