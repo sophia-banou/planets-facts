@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/sophia-banou/planets-facts)
-- Live Site URL: [Github Pages](sophia-banou.github.io/planets-facts/)
+- Live Site URL: [Github Pages](https://sophia-banou.github.io/planets-facts/)
 
 ## My process
 
